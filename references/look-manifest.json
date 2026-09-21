@@ -1,0 +1,159 @@
+{
+  "reference_center": [
+    1.342183232307434,
+    0.9450134038925171,
+    0.09131651371717453
+  ],
+  "reference_bounds": [
+    [
+      0.8136832118034363,
+      0.4400133490562439,
+      -0.19118349254131317
+    ],
+    [
+      1.870683193206787,
+      1.4500133991241455,
+      0.37381651997566223
+    ]
+  ],
+  "reference_max_extent": 1.056999921798706,
+  "units": "metres",
+  "material_names": [
+    "写实02_芯纸纤维",
+    "写实02_照片牛皮纸",
+    "写实02_瓦楞切边_3芯_材质假设",
+    "写实02_奶油摄影背景",
+    "写实02_瓦楞切边_2芯_材质假设",
+    "写实02_精车钢轴",
+    "写实02_端面刀纹",
+    "原托盘_木质表面",
+    "写实02_切断纸纤维",
+    "外箱_同源纸板照片_整面映射",
+    "写实02_较粗加工轴肩",
+    "用户原图_黑色印刷_白底透明"
+  ],
+  "lights": [
+    {
+      "name": "写实02_掠射主光",
+      "matrix_world": [
+        [
+          -0.5575565099716187,
+          0.6240389347076416,
+          -0.5474542379379272,
+          0.550000011920929
+        ],
+        [
+          -0.8301389813423157,
+          -0.41913101077079773,
+          0.3676934242248535,
+          1.7000000476837158
+        ],
+        [
+          -3.4878148369443807E-08,
+          0.6594729423522949,
+          0.7517282962799072,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 45.0,
+      "type": "AREA",
+      "size": 0.6200000047683716,
+      "size_y": 1.100000023841858,
+      "color": [
+        1.0,
+        0.9599999785423279,
+        0.8999999761581421
+      ]
+    },
+    {
+      "name": "写实02_槽口补光",
+      "matrix_world": [
+        [
+          -0.9821022748947144,
+          -0.11203192919492722,
+          0.1514066755771637,
+          1.3600000143051147
+        ],
+        [
+          0.1883484423160553,
+          -0.5841661095619202,
+          0.7894775867462158,
+          1.9800000190734863
+        ],
+        [
+          -4.667997188789741E-08,
+          0.8038648962974548,
+          0.5948119163513184,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy": 9.0,
+      "type": "AREA",
+      "size": 0.44999998807907104,
+      "size_y": 0.699999988079071,
+      "color": [
+        1.0,
+        0.9800000190734863,
+        0.9599999785423279
+      ]
+    }
+  ],
+  "world": "World",
+  "view": {
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "cycles": {
+    "samples": 64,
+    "adaptive_threshold": 0.029999999329447746,
+    "adaptive_min_samples": 8,
+    "max_bounces": 8,
+    "diffuse_bounces": 3,
+    "glossy_bounces": 4,
+    "transparent_max_bounces": 16,
+    "seed": 7017,
+    "use_animated_seed": false
+  },
+  "motion_blur_shutter": 0.3499999940395355,
+  "textures": [
+    {
+      "name": "Cardboard_original_photo_public_domain.jpg",
+      "packed": true,
+      "path": "Cardboard_original_photo_public_domain.jpg"
+    },
+    {
+      "name": "Cardboard_photo_tiled_CC0.png",
+      "packed": true,
+      "path": "Cardboard_photo_tiled_CC0.png"
+    },
+    {
+      "name": "handling-symbols.png",
+      "packed": true,
+      "path": "handling-symbols.png"
+    },
+    {
+      "name": "plywood_diff_2k.jpg",
+      "packed": true,
+      "path": "plywood_diff_2k.jpg"
+    },
+    {
+      "name": "studio_small_09_2k.hdr",
+      "packed": true,
+      "path": "studio_small_09_2k.hdr"
+    }
+  ]
+}
