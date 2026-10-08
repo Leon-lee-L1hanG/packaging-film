@@ -1,6 +1,6 @@
 interface:
   display_name: "包装写实装配视频"
-  short_description: "复用轴部件装箱的真实纸面、暖色灯光和连续运镜，从模型输出视频"
+  short_description: "先核实模型结构与装配意图，制作写实装配视频，保留可编辑工程并分项验收"
   default_prompt: "用 $packaging-film 将我提供的建模文件按上次轴部件装箱的材质与运镜风格制作成视频。"
 policy:
   allow_implicit_invocation: true
