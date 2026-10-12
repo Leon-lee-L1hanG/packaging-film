@@ -30,7 +30,8 @@
     "写实02_切断纸纤维",
     "外箱_同源纸板照片_整面映射",
     "写实02_较粗加工轴肩",
-    "用户原图_黑色印刷_白底透明"
+    "用户原图_黑色印刷_白底透明",
+    "用户确认_瓦楞纸_统一深牛皮色_20261012"
   ],
   "lights": [
     {
@@ -49,7 +50,7 @@
           1.7000000476837158
         ],
         [
-          -3.4878148369443807E-08,
+          -3.4878148369443807e-08,
           0.6594729423522949,
           0.7517282962799072,
           1.0
@@ -87,7 +88,7 @@
           1.9800000190734863
         ],
         [
-          -4.667997188789741E-08,
+          -4.667997188789741e-08,
           0.8038648962974548,
           0.5948119163513184,
           0.6200000047683716
@@ -141,6 +142,11 @@
       "path": "Cardboard_photo_tiled_CC0.png"
     },
     {
+      "name": "Cardboard_photo_tiled_CC0.png.001",
+      "packed": true,
+      "path": "Cardboard_photo_tiled_CC0.png"
+    },
+    {
       "name": "handling-symbols.png",
       "packed": true,
       "path": "handling-symbols.png"
@@ -154,6 +160,34 @@
       "name": "studio_small_09_2k.hdr",
       "packed": true,
       "path": "studio_small_09_2k.hdr"
+    },
+    {
+      "name": "牛皮纸_去大色块_保留照片微纹理",
+      "packed": true,
+      "path": ""
     }
-  ]
+  ],
+  "default_corrugated_material": "用户确认_瓦楞纸_统一深牛皮色_20261012",
+  "default_paper_aliases": [
+    "写实02_照片牛皮纸",
+    "外箱_同源纸板照片_整面映射"
+  ],
+  "corrugated_approval": {
+    "date": "2026-10-12",
+    "source_version": "card-material-v6",
+    "source_sha256": "f2420d4709d45fa296355038ba1c4dfda0aad3af9ca7fae08c397b4a65c31f49",
+    "base_linear_mean_before_darken": [
+      0.39330284267663956,
+      0.24950650334358215,
+      0.10601300299167632
+    ],
+    "darken_multiplier": 0.7,
+    "color_micro_ratio_range": [
+      0.844,
+      1.156
+    ],
+    "roughness_and_bump": "original reference unchanged",
+    "uv": "PaperMetres: metric face coordinates; approximately 0.20 m repeat",
+    "construction": "flute count and thickness follow each model; approval is appearance, not universal double-wall construction"
+  }
 }

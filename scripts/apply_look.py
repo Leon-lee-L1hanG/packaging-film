@@ -5,7 +5,13 @@ p=argparse.ArgumentParser();p.add_argument('--config',required=True);p.add_argum
 a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);dest=Path(a.out)
 if dest.exists():raise RuntimeError('Output already exists; choose a new version')
 P=Path(__file__).resolve().parents[1];cfg=json.loads(Path(a.config).read_text(encoding='utf-8-sig'));manifest=json.loads((P/'references/look-manifest.json').read_text(encoding='utf8'))
-mapping=cfg.get('materials',{});bounds=cfg.get('bounds_objects',[])
+mapping=dict(cfg.get('materials',{}));bounds=cfg.get('bounds_objects',[])
+preset=cfg.get('paper_preset','approved')
+if preset not in ('approved','legacy'):raise RuntimeError('paper_preset must be approved or legacy')
+if preset=='approved':
+ default=manifest['default_corrugated_material'];aliases=set(manifest.get('default_paper_aliases',[]))
+ mapping={obj:(default if mat in aliases else mat) for obj,mat in mapping.items()}
+
 for name in list(mapping)+bounds:
  if name not in bpy.data.objects:raise RuntimeError('Unknown object: '+name)
 with bpy.data.libraries.load(str(P/'assets/approved-look.blend'),link=False) as (src,dst):

@@ -22,7 +22,8 @@
 ## 包含内容
 
 - `SKILL.md`：技能入口与完整执行路线。
-- `assets/approved-look.blend`：已打包纹理的材质和灯光库，不包含原产品模型。
+- `assets/approved-look.blend`：已打包纹理的材质和灯光库，不包含原产品模型。默认瓦楞纸为用户确认的统一深牛皮色，消除大面积色块并保留纸纹。
+- `assets/approved-corrugated-*.png`：默认瓦楞纸材质的整体及近景参考图。
 - `assets/handling-symbols.png`：四联包装标识。
 - `references/`：材质、运镜、渲染、来源和参数。
 - `scripts/`：Blender场景检查、明确映射赋材质、断点渲染、FFmpeg编码和完整解码验证。
@@ -38,3 +39,5 @@ Blender 4.5.x、FFmpeg/ffprobe、Python 3.10+；普通Python安装`requirements.
 已用独立测试模型验证材质库加载、灯光尺度适配、两帧渲染、视频编码和完整解码。每个新产品仍需完整的材质、装配路径、镜头与声音检查。
 
 素材来源见 `references/provenance.md`。本仓库未额外授予第三方素材或用户提供图像的再分发许可。
+
+默认自动将旧纸面名称映射到已确认的新材质；精确复用旧工程原色时，可在 `apply_look.py` 配置中设置 `"paper_preset":"legacy"`。UV 约定及细节见 `references/look.md`。

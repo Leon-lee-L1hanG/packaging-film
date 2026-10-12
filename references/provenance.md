@@ -17,3 +17,7 @@
 - CAD格式转换需要使用者自己的CAD导入/转换工具；Blender不能直接读取STEP。
 
 通过PATH或用户配置定位程序，Windows可用Get-Command，macOS/Linux可用command -v。调用时传入本机绝对路径；本技能不携带Blender、FFmpeg等可执行程序。
+
+## 2026-10-12 默认瓦楞纸材质更新
+
+默认纸面已更新为用户确认的统一深牛皮色，去除大面积多色色块，保留照片微纹理、粗糙度和凹凸；加深系数已包含在节点中。材质和全部贴图已打包在 `assets/approved-look.blend`，无需原始项目文件。参数与源版本指纹见 `look-manifest.json` 的 `corrugated_approval`。该确认只涉及材质外观，瓦楞层数、厚度和楞向仍按实际模型确定。
